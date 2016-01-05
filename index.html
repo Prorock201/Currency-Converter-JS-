@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Converter</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/all.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<form class="form-horizontal" onsubmit="return false;">
+			<fieldset>
+				<legend>Currency Converter</legend>
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="textinput">Amount:</label>  
+					<div class="col-md-4">
+						<input id="amount" name="textinput" type="text" placeholder="how much?" class="form-control input-md">
+						<span class="help-block"></span>  
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="selectbasic">From:</label>
+					<div class="col-md-4">
+						<select id="from" name="selectbasic" class="form-control"></select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="selectbasic">To:</label>
+					<div class="col-md-4">
+						<select id="to" name="selectbasic" class="form-control"></select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="singlebutton"></label>
+					<div class="col-md-4">
+						<button id="exchange" name="singlebutton" class="btn btn-primary">Exchange</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label" for="textinput">Result:</label>  
+					<div class="col-md-4">
+						<input id="result" name="textinput" type="text" placeholder="you will get..." class="form-control input-md" readonly>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
